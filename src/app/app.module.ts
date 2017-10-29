@@ -4,6 +4,10 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
+//Material Design
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { MatSidenavModule } from '@angular/material'
+
 // Pages
 import { AppComponent } from './app.component';
 import { CouponDialogComponent } from './components/coupon-dialog';
@@ -32,6 +36,8 @@ import { ROUTES } from './app.routes';
     BrowserModule,
     FormsModule,
     HttpModule,
+    BrowserAnimationsModule,
+    MatSidenavModule,
     RouterModule.forRoot(ROUTES)
     ],
   providers: [CarrotService],
