@@ -1,6 +1,16 @@
-<mat-sidenav-container>
-    <mat-sidenav #sidenav>
-      Sidenav Content
-    </mat-sidenav>
-</mat-sidenav-container>
-<button (click)="sidenav.toggle()">Toggle</button>
+<mat-tab-group>
+    <mat-tab label="DEALS">
+        <div class="demo-grid-list">
+            <mat-grid-list cols="4">
+                <mat-grid-tile *ngFor="let carrot of carrots">
+                    <div class="carrot" [ngStyle]="{'background-image':'url(' + carrot.imagePath + ')'}">
+                    </div>
+                    <!-- <img src="{{ carrot.imagePath }}"/> -->
+                </mat-grid-tile>
+            </mat-grid-list>
+        </div>
+    </mat-tab>
+    <mat-tab label="ABOUT TO SPOIL"></mat-tab>
+    <mat-tab label="NOT THE BEST...BUT"></mat-tab>
+    <mat-tab label="DISCOUNTED"></mat-tab>
+</mat-tab-group>

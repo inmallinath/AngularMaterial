@@ -5,8 +5,8 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
 //Material Design
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
-import { MatSidenavModule } from '@angular/material'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSidenavModule, MatToolbarModule, MatButtonModule, MatCardModule, MatTabsModule, MatInputModule, MatSelectModule, MatCheckboxModule } from '@angular/material';
 
 // Pages
 import { AppComponent } from './app.component';
@@ -38,6 +38,13 @@ import { ROUTES } from './app.routes';
     HttpModule,
     BrowserAnimationsModule,
     MatSidenavModule,
+    MatToolbarModule, 
+    MatButtonModule,
+    MatCardModule,
+    MatTabsModule,
+    MatInputModule,
+    MatSelectModule,
+    MatCheckboxModule,
     RouterModule.forRoot(ROUTES)
     ],
   providers: [CarrotService],

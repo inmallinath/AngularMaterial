@@ -1,0 +1,18 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+$carrots-app-primary: mat-palette($mat-green, 100);
+$carrots-app-accent: mat-palette($mat-cyan);
+$carrots-app-warn: mat-palette($mat-deep-orange);
+
+$carrots-app-theme: mat-light-theme($carrots-app-primary, $carrots-app-accent, $carrots-app-warn);
+
+@include angular-material-theme($carrots-app-theme);
+
+.alternate-theme {
+    $alternate-primary: mat-palette($mat-light-blue);
+    $alternate-accent: mat-palette($mat-yellow, 400);
+    $alternate-theme: mat-light-theme($alternate-primary, $alternate-accent);
+
+    @include angular-material-theme($alternate-theme);
+}

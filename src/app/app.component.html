@@ -1,1 +1,21 @@
-<router-outlet></router-outlet>
+<mat-sidenav-container>
+    <mat-sidenav #sidenav>
+      Sidenav Content
+    </mat-sidenav>
+
+    <mat-toolbar>
+      <div class="filler"></div>
+      <button mat-button routerLink=""><i class="material-icons">home</i></button>
+      <button mat-button routerLink="/coupon"><i class="material-icons">receipt</i></button>
+      <button mat-button routerLink="/checkout"><i class="material-icons">shopping_cart</i></button>
+      <button mat-button routerLink="/help"><i class="material-icons">help</i></button>
+      <mat-toolbar-row>
+        <button mat-button (click)="sidenav.toggle()"><i class="material-icons">menu</i></button>
+      </mat-toolbar-row>
+    </mat-toolbar>
+
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+    
+</mat-sidenav-container>

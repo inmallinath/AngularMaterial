@@ -1,1 +1,47 @@
-<p>Checkout</p>
+<mat-card class="alternate-theme">
+    <mat-card-header>
+        <mat-card-title>
+            Checkout
+        </mat-card-title>
+        <mat-card-subtitle>
+            Enter your shipping address
+        </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <form>
+            <h3>Basics</h3>
+            <mat-form-field>
+                <input matInput placeholder="First Name">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Last Name">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Email">
+                <mat-hint align="end">Don't disclose personal info</mat-hint>
+            </mat-form-field>
+            <mat-form-field>
+                <span matPrefix>+1 &nbsp;</span>
+                <input type="tel" matInput placeholder="Telephone">
+                <mat-hint align="end">Format: ### ###-####</mat-hint>
+                <i class="material-icons" matSuffix>mode_edit</i>
+            </mat-form-field>
+
+            <h3>Preferences</h3>
+            <mat-form-field>
+                <mat-select placeholder="Preferred Contact Method">
+                    <mat-option value="Email">Email</mat-option>
+                    <mat-option value="Phone">Phone</mat-option>
+                </mat-select>
+            </mat-form-field>
+            
+            <mat-checkbox>Subscribe to newsletter</mat-checkbox>
+    
+        </form>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button color="primary">Submit</button>
+        <button mat-button color="warn">Cancel</button>
+    </mat-card-actions>
+    
+</mat-card>

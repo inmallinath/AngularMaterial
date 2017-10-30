@@ -1,0 +1,37 @@
+@import '../styles';
+@import '../theme';
+
+.mat-sidenav-container {
+    .mat-sidenav {
+        background-color: mat-color($mat-green, 400);
+    }
+
+    .mat-toolbar {
+        padding: 0px;
+        .mat-toolbar-row:first-of-type {
+            height: inherit;
+            background-color: mat-color($carrots-app-primary, 700);
+            display: flex;
+
+            button {
+                color: white;
+                width: 40px;
+                padding: inherit;
+                min-width: inherit;
+            }
+        }
+    }
+
+    .mat-toolbar-row {
+        background: mat-color($carrots-app-primary, 500);
+        button {
+            color: white;
+        }
+    }
+
+    .container {
+        width:800px;
+        margin:auto;
+        position:relative;
+    }
+}
